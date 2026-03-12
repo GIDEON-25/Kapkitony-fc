@@ -1,0 +1,130 @@
+body{
+font-family:Arial;
+margin:0;
+background:#f5f5f5;
+}
+
+header{
+background:yellow;
+padding:15px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+nav a{
+margin:10px;
+text-decoration:none;
+font-weight:bold;
+color:black;
+}
+
+.football-bg{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+overflow:hidden;
+z-index:-1;
+}
+
+.football{
+position:absolute;
+width:80px;
+animation:moveBall 12s linear infinite;
+}
+
+@keyframes moveBall{
+
+0%{
+left:-100px;
+top:20%;
+transform:rotate(0deg);
+}
+
+25%{
+top:40%;
+}
+
+50%{
+top:60%;
+}
+
+75%{
+top:30%;
+}
+
+100%{
+left:110%;
+top:50%;
+transform:rotate(720deg);
+}
+
+}
+.hero{
+background:red;
+color:white;
+text-align:center;
+padding:80px 20px;
+}
+
+.hero button{
+padding:10px 20px;
+border:none;
+background:yellow;
+font-weight:bold;
+cursor:pointer;
+}
+
+#typing-text{
+font-size:32px;
+font-weight:bold;
+border-right:3px solid yellow;
+display:inline-block;
+padding-right:5px;
+}
+section{
+padding:50px;
+text-align:center;
+}
+
+.players{
+display:flex;
+justify-content:center;
+gap:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.2);
+width:200px;
+}
+
+.gallery img{
+margin:10px;
+border-radius:10px;
+}
+
+form input,
+form textarea{
+width:80%;
+padding:10px;
+margin:10px;
+}
+
+form button{
+padding:10px 20px;
+background:red;
+color:white;
+border:none;
+}
+
+footer{
+background:black;
+color:white;
+text-align:center;
+padding:20px;
+}
